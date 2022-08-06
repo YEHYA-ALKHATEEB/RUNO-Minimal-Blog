@@ -1,0 +1,39 @@
+// responsive
+    @media (max-width: 540px) {     
+        main{
+ 
+            #carouselExampleControlsNoTouching {
+             
+                    .carousel-inner{
+                        .carousel-item {
+                            padding-top: 200px;
+                            padding-bottom: 100px;       
+                    }
+                }}}        
+    }
+
+    @media (max-width: 320px) {     
+        main{
+ 
+            #carouselExampleControlsNoTouching {
+             
+                    .carousel-inner{
+                        .carousel-item {
+                            padding-top: 100px;
+                            padding-bottom: 100px;       
+                    }
+                }}}        
+    }
+    @media (min-width: 991px) {     
+        .nav-item-border{
+         border-color:white ;
+         border-width: 1px;
+         border-right-style: solid;               
+         border-left-style: solid;               
+           }
+        }
+   
+ 
+
+
+

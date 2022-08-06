@@ -1,0 +1,517 @@
+//
+// Custom Main
+//
+// Add your own styles or override existing ones
+//
+// This file is included last, so you have access
+// to all Bootstrap and Dashmix functions/mixins/styles etc
+// --------------------------------------------------
+
+// If you have many custom styles, you can create and import additional files
+// For example you can create _component1.scss and include it as follows:
+// @import 'component1';
+
+@import "./component/fonts";
+.cursor-pointer:hover{
+    opacity: 0.5;
+    }
+
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    background-color: #F8F9FA;
+}
+.text-decorate{
+    text-decoration: none;
+}
+.title{
+font-family: 'Lora';
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+color: #495057;
+}
+header {
+     background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+
+    nav{
+       
+         .navbar-brand{
+            font-family: 'Spartan', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            color: #F8F9FA;
+            
+         }
+        .nav-item{   
+            
+            a{
+                width:max-content;   
+                color: #E5E5E5;
+                font-family: 'Roboto', sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;  
+    
+                span:hover::after{
+                color: #FFFFFF;
+                background: #D4A373;
+                content: "";
+                display: block;
+                width: 100%;
+                height: 1px;
+                } 
+                .active-tab::after{
+                color: #FFFFFF !important;
+                background: #D4A373;
+                 content: "";
+                 display: block;
+                 width: 100%;
+                 height: 1px;
+                 
+                } 
+               
+            }
+            
+        }  
+        .search-input{
+            width: 174px;
+            height: 22.2px;
+        } 
+    }
+}
+
+main{
+ 
+    #carouselExampleControlsNoTouching {
+     
+            .carousel-inner{
+                .carousel-item {
+                    background-position:center;
+                    background-repeat: no-repeat;
+                    background-size:cover;
+                    min-height: 600px;
+                    padding-top: 300px;
+                    padding-bottom: 100px;       
+                    background-attachment: fixed;
+                  
+
+            }
+            
+
+                .badge{
+                    border: 0px;
+                    background: rgba(255, 255, 255, 0.15);
+                    border-radius: 8px;                   
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 700;
+                    font-size: 10px;
+                    color: #FFFFFF;
+
+                }
+
+                h1{
+                    font-family: 'Lora', sans-serif;
+                    font-weight: 700;
+                    font-size: 36px;
+                    color: #FFFFFF;
+                }
+                p{
+                    font-family: 'Lora', sans-serif;
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: #E5E5E5;
+                    
+                }
+                .dash{
+                    background-color: #FFFFFF;
+                    min-width: 20px;
+                    height: 1px;
+                }           
+        }
+    }
+
+    .popular-topics{
+        .loader{
+            color: #D4A373;
+        }
+        .btn{
+            background-color: transparent;
+            border-radius: 0px ;
+            outline: none;
+            border: none;
+            box-shadow: none;
+            font-family: 'Lora', sans-serif;
+            font-weight: 700;
+            font-size: 12px;
+            color: #495057;
+        }
+        .card{
+            background: transparent;
+        }
+        .active{
+            font-family: 'Lora', sans-serif;
+            font-weight: 700;
+            color: #D4A373;
+            font-size: 14px;
+        }
+        .btn:hover{
+            font-family: 'Lora', sans-serif;
+            font-weight: 700;
+            color: #D4A373;
+            font-size: 12px;
+        }
+
+        .card-image{
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size:cover;
+            min-height: 200px;
+            border-radius: 5px;
+            position: relative;
+        }
+       
+        .badge{
+            top: 10px;
+            right: 15px;
+            border: 0px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #FFFFFF;
+            z-index: 10000;
+            position: absolute;
+        }
+        .price{
+            border: 0px;
+            color: white;
+            background: gray;
+            border-radius: 8px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+        }
+        span{
+            font-family: 'Lora', sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            color: #6C757D;
+            text-decoration: none;
+        }
+        .card-title{
+            font-family: 'Lora', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            color: #495057;
+            text-decoration: none;
+
+        }
+        .card-text{
+            font-family: 'Lora', sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            color: #6C757D;
+            font-family: 'Lora', sans-serif;
+            text-decoration: none;
+
+        }
+        
+  
+        .delete{
+            background-color: #dc3545;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 700;
+            border: 0;
+            color: #FFFFFF;
+            ;
+        }
+    }
+    .banner-bg{
+        background-repeat: no-repeat;
+        background-size:cover;
+        height: 600px;
+        background-attachment: fixed;
+       
+        .badge{
+            border-radius: 15px;
+            border: 0;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 8px;                   
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 12px;
+            color: #FFFFFF;
+
+        }
+
+        h1{
+            font-family: 'Lora', sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            text-align: center;
+            color: #FFFFFF;
+
+        }
+        p{
+            font-family: 'Lora', sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            text-align: center;
+            color: #E5E5E5;
+        }
+
+        .description::after{
+            background: #E5E5E5;
+            content: "";
+            display: block;
+            width: 30px;
+            height: 1px;
+            margin: auto;
+            margin-top: 15px;
+        }
+
+        span{
+            font-family: 'Lora', sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            color: #E5E5E5;
+
+        }
+
+    }
+
+
+    
+.product-banner{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    max-height: 600px;  
+    background-attachment: fixed;
+   
+    .badge{
+        border-radius: 15px;
+        border: 0;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 8px;                   
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 10px;
+        color: #FFFFFF;
+
+    }
+
+    h1{
+        font-family: 'Lora', sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+        color: #FFFFFF;
+
+    }
+    p{
+        font-family: 'Lora', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        text-align: center;
+        color: #E5E5E5;
+    }
+
+    
+
+    h5{
+        font-family: 'Lora', sans-serif;
+        font-style: 700;
+        font-weight: normal;
+        font-size: 12px;
+        color: #E5E5E5;
+
+    }
+
+}
+
+.related-product{
+    .product-details-bg{
+        background: rgba(229, 229, 229, 0.3);
+
+    }
+    //
+    .editors-card-image{
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        border-radius: 5px;
+        position: relative;
+    
+
+    }
+    //
+    .card-body{
+        margin-top: 10%;
+    }
+    //
+    .editor-badge{
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;  
+    border:0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    color: #FFFFFF;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+
+    }
+
+    span{
+        margin-top: 100px;
+        font-family: 'Lora', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        color: #E5E5E5; 
+    }
+    h5{
+        font-family: 'Lora', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: #FFFFFF;
+
+    }
+    p{
+        font-family: 'Lora', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: #E5E5E5;
+
+    }
+}
+
+.product-details{
+    .dash{
+        background-color: #C4C4C4;
+        min-width: 35px;
+        height: 1px;
+        margin-top: 10px;
+    }
+    .date{
+        font-family: 'Lora', sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        color: #495057;
+    }
+    .minutes{
+        font-family: 'Lora', sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        color: #495057;
+    }
+    p{
+        font-family: 'Lora', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #495057;
+    }
+    .product-dbtn{
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 10px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        margin-right: 12px;
+        margin-top: 10px;
+        color:  #6C757D;
+        outline: none;
+        box-shadow: none;
+        border: 1px solid #E5E5E5;
+        box-sizing: border-box;
+
+    }
+    hr{
+            background: #C4C4C4;
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+
+    }
+    .ellipes{
+        height: 50px;
+        width: 50px;        
+        background-repeat: no-repeat;
+    }
+    .person-name{
+        font-family: 'Lora', sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        color: #495057;
+    }
+.person-major{
+        font-family: 'Lora', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        color: #6C757D;
+}
+}
+
+.response{
+    background-color: rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    margin-top: 54px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+}
+
+footer{
+    background: #212529;
+
+    .about-us{
+
+        background: #212529;
+
+        h1{
+            font-family: 'Lora', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            color: #FFFFFF;
+        }
+    
+        p{
+            font-family: 'Lora', sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            color: #E5E5E5;
+        }
+    }
+    .footer-bottom{
+
+        background: #343A40;
+        .publisher{
+            margin-top: 29.5px;
+            font-family: 'Lora', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            color: #E5E5E5;
+        }
+        .subscribe{
+            margin-top: 29.5px;
+            font-family: 'Lora', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            color: #E5E5E5;
+        }
+
+    }
+  
+}
+
